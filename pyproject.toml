@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+
+[project]
+name = "pypixelmark"
+version = "1.0.0"
+authors = [
+  { name="Mendit.AI Inc", email="contact@mendit.ai" },
+]
+description = "A small library that can be used to transform a PIL.Image to an HTML compatible base64 string and add a watermark if required"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+]
+install_requires=[
+    'pillow>=11.0.0'
+]
+license = "Apache 2.0"
+license-files = ["LICEN[CS]E*"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/menditai/pypixelmark"
+Issues = "https://github.com/menditai/pypixelmark/issues"
